@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/cbd0fa384e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="nav">
+      <div class="left">
+        <h1>Nataniel</h1>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#welcome">Home</a></li>
+          <li><a href="#content">About me</a></li>
+          <li><a href="#words">Words</a></li>
+          <li><i class="fa-solid fa-bars" onclick="show()"></i></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="hiddennav" id="nav">
+    <a href="#welcome" onclick="show()">Home</a>
+    <a href="#content">About me</a>
+    <a href="">Words</a>
+  </div>
+    <div> <!--sticky parent-->
+      <div class="welcome" id="welcome">
+        <h1>Don't be lazy, don't be crazy, don't be silly</h1>
+        <a href="#content"><button type="button">Lihat profil saya</button></a>
+      </div>
+      <div class="content" id="content">
+        <h1>Nama saya Andi Pratama, lahir di Jakarta pada tanggal 2 Februari 1990. Saya lulusan dari Universitas Indonesia jurusan Teknik Informatika. Saya memiliki pengalaman kerja selama 5 tahun di bidang pengembangan perangkat lunak. Di waktu luang, saya suka membaca buku dan bermain musik</h1>
+        <img src="Pictures/me.png" alt="" srcset="">
+      </div>
+      <div class="words" id="words">
+        <h1>"Life is like a <span>journey</span> on a train with its stations and changes of routes. At birth, we <span>board</span> the train and meet our parents. As time goes by, other people will board the train, and they will be <span>significant</span>, like our<mark> siblings, friends, and even the love of our life.</mark>  The train ride will be full of joy, sorrow, and farewells. Let’s create something <span>extraordinary</span> together."</h1>
+        <p>Copilot-2024</p>
+    </div>
+    <div class="pj">
+      <h1>My Project</h1>
+      <div class="column">
+        <h1>Github project</h1>
+        <p>Ini adalah project android yang dibuat oleh saya dan teman saya. Projek ini dibuat menggunakan IDE Android Studio dengan menggunakan Java sebagai bahasa pemmrogramannya. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum corrupti culpa?</p>
+        <a href="">Lihat projek</a>        
+      </div>
+    </div>
+  </div><!--------->
+  
+  <script src="index.js"></script>
+</body>
+</html>
