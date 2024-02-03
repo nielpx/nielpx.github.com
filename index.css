@@ -189,7 +189,6 @@ nav .nav .right ul li i{
     padding: 12px 0;
     background-image: url('Pictures/sean-sinclair-C_NJKfnTR5A-unsplash.jpg');
     background-size: cover;
-    background-attachment: fixed;
     align-items: center;
     justify-content: center;
     position: sticky;
