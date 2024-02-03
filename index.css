@@ -190,7 +190,6 @@ nav .nav .right ul li i{
     background-image: url('Pictures/sean-sinclair-C_NJKfnTR5A-unsplash.jpg');
     background-size: cover;
     align-items: center;
-    justify-content: center;
     position: sticky;
     top: 0;
 
@@ -205,6 +204,7 @@ nav .nav .right ul li i{
     display: flex;
     width: 70vw;
     flex-direction: column;
+    margin-top: 100px;
     background-color: #3a7bd5;
     background: rgba(170, 230, 244, 0.31);
     border-radius: 16px;
