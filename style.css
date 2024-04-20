@@ -8,6 +8,7 @@
     --third: #071952;
     --white: #edfffc;
     --side: #6f00ff;
+    --black: #042426;
 }
 *{
     padding: 0;
@@ -20,13 +21,7 @@
     height: auto;
     align-items: center;
     justify-content: space-between;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    position: fixed;
-    z-index: 2;
+    background-color: #fff;
 }
 .nav .logo{
     padding: 8px 7px;
@@ -55,7 +50,16 @@
     width: 50%;
     position: absolute;
     top: 0px;
-    
+    animation: par linear;
+    animation-timeline: scroll();
+}
+@keyframes par {
+    from{
+        top: 0;
+    }
+    to{
+        top: -120%;
+    }
 }
 .main p > .seems-style{
     font-style: italic;
@@ -82,14 +86,35 @@
 }
 .content1{
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--second);
+    background-color: var(--first);
 }
 .content1 h1{
-    font-weight: 800;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 4vw;
+    animation: big linear both;
+    animation-timeline: view();
+    animation-range: contain contain 100px;
+}
+@keyframes big {
+    to{
+        background-color: var(--white);
+    }
+}
+.content1 p{
+    color: var(--white);
+}
+.content1 img{
+    position: absolute;
+    height: 100vh;
+    filter: grayscale(100%);
+    right: 0;
+    mix-blend-mode: darken;
 }
 .content2{
     display: flex;
