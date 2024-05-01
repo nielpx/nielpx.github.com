@@ -4,7 +4,10 @@
     animation-timeline: view();
     animation-range: contain 0% contain 100%;
 }
-
+.percent:hover {
+	-webkit-animation: text-flicker-in-glow 4s linear both infinite;
+	        animation: text-flicker-in-glow 4s linear both infinite;
+}
 #logo:hover {
 	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
 	        animation: heartbeat 1.5s ease-in-out infinite both;
@@ -15,6 +18,7 @@
     animation-timeline: view();
     animation-range: contain 0% contain 45%;
 }
+
 
 
 
