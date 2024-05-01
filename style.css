@@ -1,19 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 
-:root{
-    --primary: #97FEED;
-    --first: #35A29F;
-    --second: #0B666A;
-    --third: #071952;
-    --white: #edfffc;
-    --side: #6f00ff;
-    --black: #042426;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: "Base";
+    src: url("fonts/BaseNeue-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Base";
+    src: url("fonts/BaseNeue-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Base";
+    src: url("fonts/BaseNeue-ExpandedLight.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Base";
+    src: url("fonts/BaseNeue-Black.ttf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Base";
+    src: url("fonts/BaseNeue-ExtraLight.ttf");
+    font-weight: 200;
+}
+.main, .content1{
+    color: var(--neutral-white);
+}
+html{
+    scroll-behavior: smooth;
 }
 *{
     padding: 0;
     margin: 0;
-    font-family: "Syne", sans-serif;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --primary1: #DBE3FF;
+    --primary2: #7C8FDB;
+    --primary3: #536299;
+    --primary4: #1B2E6D;
+    --primary5: #232940;
+    --secondary1: #C191FF;
+    --secondary2: #AC6CFF;
+    --secondary3: #9747FF;
+    --secondary4: #7939CC;
+    --secondary5: #5B2B99;
+    --neutral-white: #ededff;
+    --black: #000822;
+
 }
 .nav{
     display: flex;
@@ -21,117 +60,144 @@
     height: auto;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: var(--neutral-white);
+    position: relative;
+    z-index: 1;
 }
 .nav .logo{
-    padding: 8px 7px;
+    padding: 8px 34px;
 }
-
-.nav .link a{
+.nav .link{
+    padding-right: 34px;
+}
+.nav .link > a{
     padding: 12px;
     text-decoration: none;
-    color: var(--second);
+    color: var(--black);
 }
 .nav .link a:hover{
-    background-color: var(--second);
+    background-color: var(--primary2);
     border-radius: 20px;
-    color: var(--white);
+    color: var(--primary1);
 }
-
+#bar{
+    display: none;
+    padding-right: 12px;
+}
+.mob-nav{
+    display: none;
+    
+}
+.mob-nav a{
+    padding: 17px 12px;
+    font-weight: 300;
+}
+.mob-nav a:hover{
+    background-color: var(--neutral-white);
+}
 .main{
     display: flex;
     width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--white);
+    justify-content: space-between;
+    background-color: var(--black);
 }
-.main img{
-    width: 50%;
-    position: absolute;
-    top: 0px;
-    animation: par linear;
-    animation-timeline: scroll();
+.main .left{
+    padding-left: 34px;
 }
-@keyframes par {
-    from{
-        top: 0;
-    }
-    to{
-        top: -120%;
-    }
+.main .right{
+    padding-right: 34px;
 }
-.main p > .seems-style{
-    font-style: italic;
-    background-color: var(--side);
-    border-radius: 30px;
-    color: var(--white);
+.main .left h1{
+    font-family: "Base";
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 75px;
+    padding-right: 29%;
 }
-.main h1{
-    color: var(--first);
-    font-size: 8vw;
-    z-index: 1;
-    font-weight: 300;
-    
-}  
-
-.main h1 > .span2{
-    font-weight: bold;
+.main .left p{
+    font-size: 19px;
+    padding-right: 41%;
+    margin-top: 20px;
 }
-.main h1 > .span1{
-    color: var(--second);
+#putra{
+    color: var(--primary3);
+    font-family: "Base";
+    font-weight: 900;
 }
-.main p{
-    font-size: 4vw;
+.main .left > .icon{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.main .left > .icon > a > #logo{
+    font-size: xx-large;
+    color: var(--neutral-white);
+}
+.main .left > .icon > a:not(a:nth-child(1)){
+    margin-left: 17px;
+}
+.main .left > .icon a > #btnmain{
+    padding: 7px 17px;
+    border: none;
+    background-color: var(--secondary2);
+}
+.main .right img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .content1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+.content1 h1, #o1-a, #o1-b, #o1-c{
+    font-family: "Base";
+    font-size: 15vw;
+    font-weight: 400;
+}
+.content1 h1 > #o1-a{
+    font-weight: 200;
+}
+.content1 h1 > #o1-b{
+    font-weight: 500;
+}
+.content1 h1 > #o1-c{
+    color: var(--primary4);
+}
+.content1 h1:nth-child(2){
+    line-height: 0;
+}
+.content1 h1 > #star1{
+    font-size: 10vw;
+    
+}
+.content2{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--first);
+    background-color: var(--neutral-white);
 }
-.content1 h1{
-    font-weight: 600;
+.content2 p{
+    font-family: "Cormorant", serif;
+    font-size: 20px;
     color: var(--black);
-    font-size: 4vw;
-    animation: big linear both;
-    animation-timeline: view();
-    animation-range: contain contain 100px;
+    font-style: italic;
 }
-@keyframes big {
-    to{
-        background-color: var(--white);
+@media (max-width: 1245px) {
+    .main .right img{
+        width: 400px;
+        height: 400px;
     }
-}
-.content1 p{
-    color: var(--white);
-}
-.content1 img{
-    position: absolute;
-    height: 100vh;
-    filter: grayscale(100%);
-    right: 0;
-    mix-blend-mode: darken;
-}
-.content2{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white);
-}
-.content3{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--side);
-}
-.content3 h1{
-    color: var(--white);
+    
 }

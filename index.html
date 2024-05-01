@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niel's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://kit.fontawesome.com/cbd0fa384e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <div class="nav">
@@ -15,23 +18,34 @@
             <a href="">About</a>
             <a href="">Contact</a>
             <a href="">Project</a>
+            <i class="fa-solid fa-bars" onclick="reveal()" id="bar"></i>
         </div>
     </div>
     <div class="main">
-        <img src="img/back.png" alt="back">
-        <p>it <span class="seems-style">seems</span> like</p>
-        <h1><span class="span2">NPD</span><span class="span1">-x</span></h1>
+        <div class="left">
+            <h1>Nataniel <span id="putra">Putra</span> Darmawan</h1>
+            <p>Saya percaya bahwa setiap proyek, tidak peduli seberapa kecil atau besar, memiliki potensi untuk menjadi sesuatu yang luar biasa.</p>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-instagram" id="logo"></i></a> 
+                <a href=""><i class="fa-brands fa-youtube" id="logo"></i></a>
+                <a href=""><i class="fa-brands fa-github" id="logo"></i></a>
+                <a href=""><button type="button" id="btnmain">See more</button></a>
+                <a href=""><button type="button" id="btnmain">Lihat projek</button></a>                
+            </div>
+        </div>
+        <div class="right">
+            <img src="img/DSC_3394.JPG" alt="Nataniel" srcset="">
+        </div>
     </div>
-    <div class="content1">
-        <h1 >“I CAME, I SAW, I CONQUERED.” </h1>
-        <p>--Julius Caesar--</p>
-        <img src="img/pngegg.png" alt="julius" srcset="">
+    <div class="content1">  
+        <h1>NATAN<span id="star1"class="text-flicker-in-glow">✹</span>L<span id="o1-b">O</span><span id="o1-c">GY</span></h1>
+        <h1>NATAN<span id="o1-a">O</span>L<span id="star2"class="text-flicker-in-glow">❋</span><span id="o1-c">GY</span></h1>
+        <h1>NATAN<span id="o1-a">O</span>L<span id="o1-b">O</span><span id="o1-c">GY</span></h1>      
     </div>
     <div class="content2">
-        <h1 >COMING SOON</h1>
+        <p class="text-focus-in">"I do nothing but coding"</p>
+        <p class="text-focus-in">+++ coming soon +++</p>
     </div>
-    <div class="content3">
-        <h1 >COMING SOON</h1>
-    </div>
+    <script src="index.js"></script>
 </body>
 </html>
