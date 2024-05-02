@@ -105,7 +105,7 @@ html{
 .main{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100vh;
     align-items: center;
     justify-content: space-between;
     background-color: var(--black);
@@ -250,6 +250,7 @@ html{
         height: auto;
         align-items: center;
         justify-content: center;
+        padding: 12px 0;
     }
     .nav .link a{
         display: none;
@@ -294,28 +295,34 @@ html{
     .content2 div p{
         font-size: 2vw;
     }
-    @media (max-width: 420px){
-        .main .left > .icon > a > #logo{
-            font-size: 6.9vw;
-        }
-        .main .left > .icon a > #btnmain{
-            font-size: 3vw;
-            padding: 2vw 1.5vw;
-        }
-        .content2{
-            flex-direction: column;
-            justify-content: space-around;
-            height: 50vh;
-        }
-        .content2 .skills{
-            font-size: 9vw;
-        }  
-        .content2 div .percent{
-            font-size: 12vw;
-        } 
-        .content2 div p{
-            font-size: 4vw;
-            line-height: 9vw;
-        }
+    .content1 h1:nth-child(2){
+        line-height: 10vw;
+    }
+}
+@media (max-width: 420px){
+    .main .left > .icon > a > #logo{
+        font-size: 6.9vw;
+    }
+    .main .left > .icon a > #btnmain{
+        font-size: 3vw;
+        padding: 2vw 1.5vw;
+    }
+    .content2{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    .content2 .skills{
+        font-size: 9vw;
+    }  
+    .content2 div .percent{
+        font-size: 12vw;
+    } 
+    .content2 div p{
+        font-size: 4vw;
+        line-height: 9vw;
+    }
+    .content1{
+        height: 30vh;
     }
 }
