@@ -267,12 +267,12 @@ html{
     }
     .main .left h1{
         padding-right: 0;
-        font-size: 10vw;
+        font-size: 12vw;
         line-height: 9vw;
     }
     .main .left p{
         padding: 7px 12px;
-        font-size: 2vw;
+        font-size: 3vw;
         margin-top: 5px;
     }
     .main .right img{
@@ -285,10 +285,6 @@ html{
     .main .left > .icon > a > #logo{
         font-size: 5vw;
     }
-    .main .left > .icon a > #btnmain{
-        font-size: 1.5vw;
-        padding: 1vw 1.5vw;
-    }
     .content2 div p{
         font-size: 2vw;
     }
@@ -297,8 +293,8 @@ html{
             font-size: 6vw;
         }
         .main .left > .icon a > #btnmain{
-            font-size: 2vw;
-            padding: vw 1.5vw;
+            font-size: 3vw;
+            padding: 2vw 1.5vw;
         }
         #bar{
             font-size: 4vw;
