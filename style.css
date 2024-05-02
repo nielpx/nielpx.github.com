@@ -82,18 +82,26 @@ html{
 }
 #bar{
     display: none;
-    padding-right: 12px;
+    padding-right: 34px;
 }
 .mob-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--neutral-white);
     display: none;
-    
+    position: absolute;
+    transition: all ease 2s;
 }
 .mob-nav a{
+    text-decoration: none;
+    color: var(--black);
     padding: 17px 12px;
-    font-weight: 300;
+    
 }
-.mob-nav a:hover{
-    background-color: var(--neutral-white);
+.mob-nav a:active{
+    background-color: var(--secondary1);
 }
 .main{
     display: flex;
@@ -182,10 +190,11 @@ html{
 .content2{
     display: flex;
     width: 100%;
-    height: 30vh;
+    height: auto;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--black);
+    padding: 30px 0;
 }
 .content2 div{
     display: flex;
@@ -230,7 +239,7 @@ html{
     }
     
 }
-@media (max-width: 860px) {
+@media (max-width: 945px) {
     .main{
         display: flex;
         flex-direction: column-reverse;
@@ -238,16 +247,62 @@ html{
         align-items: center;
         justify-content: center;
     }
+    .nav .link a{
+        display: none;
+    }
+    #bar{
+        display: block;
+        font-size: 3vw;
+    }
     .main .left{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .main .right{
         padding: 0;
     }
     .main .left h1{
         padding-right: 0;
+        font-size: 10vw;
+        line-height: 9vw;
     }
     .main .left p{
-        padding-right: 0;
+        padding: 7px 12px;
+        font-size: 2vw;
+        margin-top: 5px;
     }
-    .main .right{
-        padding: 0;
+    .main .right img{
+        width: 300px;
+        height: 300px;
+    }
+    .main .left .icon a {
+        font-size: 2vw;
+    }
+    .main .left > .icon > a > #logo{
+        font-size: 5vw;
+    }
+    .main .left > .icon a > #btnmain{
+        font-size: 1.5vw;
+        padding: 1vw 1.5vw;
+    }
+    .content2 div p{
+        font-size: 2vw;
+    }
+    @media (max-width: 420px){
+        .main .left > .icon > a > #logo{
+            font-size: 6vw;
+        }
+        .main .left > .icon a > #btnmain{
+            font-size: 2vw;
+            padding: vw 1.5vw;
+        }
+        #bar{
+            font-size: 4vw;
+        }
+        
     }
 }
